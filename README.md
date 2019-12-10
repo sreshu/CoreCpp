@@ -1,2 +1,2 @@
 # DSAlgo
-#30DaysOfAlgo
+#100DaysOfAlgo
