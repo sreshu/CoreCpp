@@ -52,6 +52,21 @@ TreeNode<int>* takeInput() {
 
 }
 
+void printAtLevelK(TreeNode<int>* root, int k){
+    if (root == NULL){
+        return;
+    }
+
+    if (k == 0){
+        cout << root -> data << endl;
+        return;
+    }
+
+    for (int i=0; i< root->children.size(); i++){
+        printAtLevelK(root->children[i], k-1);
+    }
+}
+
 void printTree(TreeNode<int>* root){
 
     if (root == NULL){
@@ -67,6 +82,25 @@ void printTree(TreeNode<int>* root){
     }
 }
 
+void preorder(TreeNode<int>* root){
+    if (root == NULL){
+        return;
+    }
+    cout << root ->data << " ";
+    for(int i=0; i<root->children.size(); i++){
+        preorder(root->children[i]);
+    }
+}
+
+void deleteTree(TreeNode<int>* root){
+    for(int i=0; i<root->children.size(); i++){
+        deleteTree(root->children[i]);
+    }
+
+    delete root;
+
+}
+
 int main() {
     /*TreeNode<int>* root = new TreeNode<int>(1);
     TreeNode<int>* node1 = new TreeNode<int>(2);
@@ -79,5 +113,8 @@ int main() {
     printTree(root);
 
     //TODO Delete tree
+
+    deleteTree(root);
+    //delete root;
     
 }
