@@ -3,8 +3,7 @@ using namespace std;
 
 //implement insert, delete, reverse// A simple CPP program to introduce 
 // a linked list 
-#include <bits/stdc++.h> 
-using namespace std; 
+
   
 class Node { 
 public: 
@@ -61,6 +60,53 @@ void deleteNthNode(Node* &head, int n)
         delete(current);
     }
 
+void deletedMthfromEnd(Node* &head, int m)
+{
+    int count = 0; // Initialize count  
+    Node* temp = head; // Initialize current  
+    while (temp != NULL)  
+    {  
+        count++;  
+        temp = temp->next; 
+        
+    } 
+    cout << count << endl; 
+    
+    
+
+    int n;
+    n = count - m ;
+
+    cout << "n :"<< n << endl;
+
+
+
+
+        Node* prev = head;
+
+        if(n == 0){
+
+             
+            
+            head = head->next;
+            delete prev;
+            return;
+
+        }
+
+    int i;
+    for(i=0;i<n-1;i++){
+        prev = prev->next;
+    }
+
+        Node* current = prev->next;
+        prev->next = current->next;
+        delete(current);
+        return;
+}
+
+
+
 void reverse(Node** head)
 {
 	Node* result = NULL;
@@ -104,7 +150,8 @@ int main()
     fourth->next = NULL; 
     //insert(head,4);
     printLinkedList(head);
-    deleteNthNode(head,0);
+    deletedMthfromEnd(head,3);
+    //deleteNthNode(head,0);
     printLinkedList(head);
     //cout<<"Reversed Linked List:"<<endl;
     //reverse(&head);
