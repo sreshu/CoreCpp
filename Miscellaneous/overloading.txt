@@ -1,0 +1,13 @@
+Reasons for overloading new and delete
+
+Now that we have seen how to overload the new and delete operators, let us summarize the major scenarios where it makes sense to do this:
+
+    The overloaded new operator function allows to add additional parameters. Therefore, a class can have multiple overloaded new operator functions. This gives the programmer more flexibility in customizing the memory allocation for objects.
+
+    Overloaded the new and delete operators provides an easy way to integrate a mechanism similar to garbage collection capabilities (such as in Java), as we will shorty see later in this course.
+
+    By adding exception handling capabilities into new and delete, the code can be made more robust.
+
+    It is very easy to add customized behavior, such as overwriting deallocated memory with zeros in order to increase the security of critical application data.
+
+

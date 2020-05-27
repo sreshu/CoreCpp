@@ -1,0 +1,16 @@
+Allocating Dynamic Memory
+
+To allocate dynamic memory on the heap means to make a contiguous memory area accessible to the program at runtime and to mark this memory as occupied so that no one else can write there by mistake.
+
+To reserve memory on the heap, one of the two functions malloc (stands for Memory Allocation) or calloc (stands for Cleared Memory Allocation) is used. The header file stdlib.h or malloc.h must be included to use the functions.
+
+Here is the syntax of malloc and calloc in C/C++:
+
+pointer_name = (cast-type*) malloc(size);
+pointer_name = (cast-type*) calloc(num_elems, size_elem);
+
+malloc is used to dynamically allocate a single large block of memory with the specified size. It returns a pointer of type void which can be cast into a pointer of any form.
+
+calloc is used to dynamically allocate the specified number of blocks of memory of the specified type. It initializes each block with a default value '0'.
+
+Both functions return a pointer of type void which can be cast into a pointer of any form. If the space for the allocation is insufficient, a NULL pointer is returned.
