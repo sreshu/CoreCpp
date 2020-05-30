@@ -17,6 +17,3 @@ int main()
 
 //The part new int(i) creates a new block of memory on the heap and initializes it with the value of i. 
 //The returned result is the address of the block of memory. 
-
-
-// The part MyInt en(…)calls the constructor of class MyInt, passing the address of a valid memory block as a parameter. 
