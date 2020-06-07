@@ -65,6 +65,9 @@ Important Data Structures and Algorithms.
 
 ## Hashing
 
+## Miscellaneous 
+- [ ] Memory Management from [TheChreno](https://www.youtube.com/user/TheChernoProject)
+
 
 
 
