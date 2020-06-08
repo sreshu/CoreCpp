@@ -68,6 +68,10 @@ Important Data Structures and Algorithms.
 ## Miscellaneous 
 - [ ] Memory Management from [TheChreno](https://www.youtube.com/user/TheChernoProject)
 
+## Call by Ptr Vs Call by Reference Vs Call by Value
+
+- [x] Useful [Link](https://hackr.io/blog/pass-by-reference-vs-pass-by-pointer)
+
 
 
 
