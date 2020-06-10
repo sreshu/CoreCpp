@@ -66,7 +66,8 @@ Important Data Structures and Algorithms.
 ## Hashing
 
 ## Miscellaneous 
-- [ ] Memory Management from [TheChreno](https://www.youtube.com/user/TheChernoProject)
+- [ ] Memory Management from [TheChreno](https://www.youtube.com/user/TheChernoProject) 
+- [ ][Rule of Five in Modern Cpp](https://cpppatterns.com/patterns/rule-of-five.html)
 
 ## Call by Ptr Vs Call by Reference Vs Call by Value
 
